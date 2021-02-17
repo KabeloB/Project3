@@ -42,8 +42,8 @@ public interface CaseUtil {
 	 * Output: Hello world
 	 * 
 	 * Example 2:
-	 * Input:  I love java
-	 * Output: I_love_you
+	 * Input:  I_love_java
+	 * Output: I love you
 	 */
 	String asHumanReadableText(String text);
 	

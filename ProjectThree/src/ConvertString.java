@@ -17,6 +17,7 @@ public class ConvertString{
 			
 			//Test cases for MyStrings class methods implemented from CaseUtil interface
 			//Camel case examples
+		    //String camelCase = objStrings.asHumanReadableText("My_name_is_kabelo_basetse,_prospect_Impact_employee");
 		    String camelCase = objStrings.asCamelCase("I love java");
 		    String camelCase2 = objStrings.asCamelCase("Hello world");
 		    
