@@ -1,4 +1,8 @@
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+
 import za.co.kabeloprojects.MyStrings;
+import za.co.kabeloprojects.MyTestSuite;
 
 //@Author: Kabelo-Basetse project
 
@@ -44,6 +48,14 @@ public class ConvertString{
 		    System.out.println(                                  humanReadable2 + "\n");
 		    
 		    
+		    //JUnit Testing the "MyTestSuite" class
+		    Result result = JUnitCore.runClasses(MyTestSuite.class);
+		    int c = result.getRunCount();
+		    int failedTestCount = result.getFailureCount();
+		    
+		    //Display number of suite tests conducted and check for any failure 
+		    System.out.println("Number of tests conducted: (" + c + ")");
+		    System.out.println("Number of failed tests: (" + failedTestCount + ")");
 		    
 		    //Empty parameter validation test 
 		    /*
